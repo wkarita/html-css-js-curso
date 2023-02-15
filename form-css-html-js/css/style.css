@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.container {
+  background-color: #fafafa;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 25rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #eee;
+  padding: 1.25rem;
+}
+
+.form {
+  padding: 1.25rem;
+}
+
+.form-control {
+  margin-bottom: 0.625rem;
+  padding-bottom: 1.25rem;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 0.3125rem;
+}
+
+.form-control input {
+  border: 2px solid #e9e8e8;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 38px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button {
+  background-color: rgb(238, 174, 202);
+  border: 2px solid rgb(238, 174, 202);
+  color: #fff;
+  font-size: 1.2em;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}

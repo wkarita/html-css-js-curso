@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Criar uma conta</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Nome de usuário</label>
+          <input type="text" id="username" />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>O nome de usuário é obrigatório.</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Por favor, insira um e-mail válido.</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input type="password" id="password" />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label for="passwordConfirmation">Confirmação de senha</label>
+          <input type="password" id="passwordConfirmation" />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>As senhas não conferem.</small>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
